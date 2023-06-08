@@ -47,11 +47,10 @@ describe
 
 **2.查看数据**
 
-**查看s与lnw的具体数据**
-
 **在屏幕底端出现带下划线的英文字“more”，用鼠标单击“more”，可翻看下页的结果。**
 
 ```stata
+//查看s与lnw的具体数据
 list s lnw
 //连续滚屏显示命令运行结果
 set more off
@@ -109,7 +108,7 @@ scatter lnw s,mlabel(n)
 
 <img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306071715929.png" alt="image-20230607171522886" style="zoom:67%;" />
 
-<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306071715019.png" alt="image-20230607171535964" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306071715019.png" alt="image-20230607171535964" style="zoom: 67%;" />
 
 **5.统计分析**
 
@@ -207,7 +206,7 @@ ssc install newcommand
 
 ##3.1 微积分
 
-### 1. 导数
+### 1.导数
 
 <img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306061927538.png" alt="image-20230606192703463" style="zoom: 67%;" />
 
@@ -217,7 +216,7 @@ ssc install newcommand
 
 
 
-#### 2. 一元最优化
+###2.一元最优化
 
 <img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306061932603.png" alt="image-20230606193223392" style="zoom:33%;" />
 
@@ -230,6 +229,50 @@ ssc install newcommand
 <img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306061937632.png" alt="image-20230606193731536" style="zoom:33%;" />
 
 <img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306061940442.png" alt="image-20230606194053377" style="zoom:33%;" />
+
+### 3.偏导数
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081725837.png" alt="image-20230608172510295" style="zoom:80%;" />
+
+目的是求出当x~1~发生变化，x~2~、x~3~...x~n~均不发生变化时，函数y变化的速度
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081730154.png" alt="image-20230608173001103" style="zoom:80%;" />
+
+### 4.多元最优化
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081734292.png" alt="image-20230608173427230" style="zoom:80%;" />
+
+目的是找到一组***X***使得f(***X***)最大
+
+一阶条件要求在最优值**x***处，所有偏导数均为 0：
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081738536.png" alt="image-20230608173842479" style="zoom:80%;" />
+
+多元最小化的一阶条件与此相同。此一阶条件要求在最优值**x***处，曲面 *f* (**x** )  在各个方向的切线斜率都为 0 。
+
+### 5.积分
+
+考虑计算连续函数y=f(x)在区间[a,b]上的面积
+
+![image-20230608175756817](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081757860.png)
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081759336.png" alt="image-20230608175927356" style="zoom:33%;" />
+
+![image-20230608180118697](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081801743.png)
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081801718.png" alt="image-20230608180127651" style="zoom: 80%;" />
+
+这里其实就是划分成无数个矩形的意思
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306081802507.png" alt="image-20230608180210443" style="zoom:80%;" />
+
+
+
+## 3.2 线性代数
+
+### 1. 矩阵
+
+
 
 # 第四章 一元线性回归
 
