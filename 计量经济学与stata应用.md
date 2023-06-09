@@ -272,6 +272,122 @@ ssc install newcommand
 
 ### 1. 矩阵
 
+将m*n个实数排列成如下矩状的阵形，
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091354298.png" style="zoom: 80%;" />
+
+称 **A** 为m*n级矩阵(matrix)，m为矩阵**A**的行数(row dimension)，n为矩阵**A**的列数(column dimension)。 **A**中元素a~ij~表示矩阵**A**的第
+
+*i* 行、第 *j* 列元素。
+
+***矩阵的性质：***
+
+* 如果**A**中所有元素都为 0，则称为零矩阵(zero matrix)，记为**0** 。零矩阵在矩阵运算中的作用，相当于 0 在数的运算中的作用。
+
+---
+
+### 2.方阵
+
+如果m=n，则称**A** 为 *n* 级方阵(square matrix)，即
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091415423.png" alt="image-20230609141505380" style="zoom: 80%;" />
+
+ 
+
+称a~11~、a~22~...a~nn~为**主对角线上的元素**(diagonal elements)，而 **A** 中的其他元素为**非主对角线元素**(off-diagonal elements)。
+
+***方阵的性质：***
+
+* 如果方阵**A**中的元素满足a~ij~=a~ji~（任意i,j=1....n）则称矩阵**A**为**对称矩阵**(symmetric matrix)。
+
+* 如果方阵 **A** 的非主对角线元素全部为 0，则称为**对角矩阵**(diagonal matrix)：
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091418332.png" alt="image-20230609141838159" style="zoom: 80%;" />
+
+
+
+* 如果一个 *n* 级对角矩阵的主对角线元素都为 1，则称为 *n* 级单位矩阵(identity matrix)，记为**I** 或 **I~n~**:
+
+![image-20230609142032071](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091420108.png)
+
+* 单位矩阵在矩阵运算中的作用，相当于 1 在数的运算中的作用。
+
+### 3.矩阵的转置
+
+如果将矩阵 **A**=(a~ij~)~m*n~的第 1 行变为第 1 列，第 2 行变为第 2列，……，第 *m* 行变为第 *m* 列，可得其转置矩阵(transpose)，记
+
+为 **A‘**(英文读为**A** *prime*)，其维度为n*m。
+
+***矩阵转置的性质：***
+
+* **（A'）~ij~**=**（A）~ji~**
+
+* 矩阵转置的转置仍是它本身，**（A'）‘=A**
+
+### 4.向量
+
+向量是特殊的矩阵。
+
+如果*m* = 1，则矩阵**A**~1*n~ 为 *n* 维行向量(row vector)
+
+如果*n* = 1，则矩阵**A** ~m*1~为 *m* 维列向量(column vector)。
+
+**向量的性质：**
+
+* 考察n维列向量a=(a~1~ a~2~...a~n~)'与b=(b~1~ b~2~...b~n~)'，向量a与b的内积(inner product)或点乘(dot product)可定义为:
+
+![image-20230609151624753](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091516822.png)
+
+* 如果 **a’b**=0 ，则称向量**a** 与 **b**正交(orthogonal)，意味着两个向量在 *n* 维向量空间中相互垂直(夹角为 90 度 )
+
+![image-20230609151819420](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091518480.png)
+
+### 5.矩阵的加法
+
+![image-20230609152025757](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091520813.png)
+
+### 6.矩阵的数乘
+
+![image-20230609152148287](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091521355.png)
+
+### 7.矩阵的乘法
+
+如果矩阵**A**的列数与矩阵**B**的行数相同，则可以定义矩阵乘积(matrix multiplication)**A** * **B**，简记**AB** 。
+
+![image-20230609184404961](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091844010.png)
+
+<img src="https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091854924.png" alt="image-20230609185432782" style="zoom: 33%;" />
+
+![image-20230609184439984](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091844059.png)
+
+### 8.线性方程组
+
+![image-20230609184512142](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091845214.png)
+
+![image-20230609184534392](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091845460.png)
+
+### 9.逆矩阵
+
+![image-20230609184612032](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091846074.png)
+
+![image-20230609184624953](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091846006.png)
+
+![image-20230609184652258](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091846302.png)
+
+### 10.矩阵的秩
+
+![image-20230609194332187](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091943234.png)
+
+![image-20230609194548718](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091945761.png)
+
+线性组合：通俗的解释就是用其他向量来表示一个向量，例如a~1~=a~2~+a~3~
+
+![image-20230609194600720](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091946763.png)
+
+![image-20230609194746540](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091947594.png)
+
+![image-20230609194822434](https://raw.githubusercontent.com/PineHan0817/ImageHost/main/202306091948481.png)
+
 
 
 # 第四章 一元线性回归
